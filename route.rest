@@ -1,0 +1,30 @@
+GET http://localhost:3000/unicorns
+
+###
+
+POST http://localhost:3000/unicorns
+Content-Type: application/json
+
+{
+  "name": "BJ",
+  "fur": "Black",
+  "hornLength": 1,
+  "isBaby": true,
+  "owner": null
+}
+
+
+###
+
+POST http://localhost:3000/rides
+Content-Type: application/json
+
+{
+  "user": "Anish",
+  "unicorn": "Puff",
+  "duration": 10
+}
+
+###
+
+GET http://localhost:3000/longest-rider/Puff
